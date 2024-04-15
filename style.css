@@ -18,6 +18,12 @@ h1 {
     line-height: 100%;
 }
 
+h2 {
+    font-size: 150%;
+    margin-top: 48px;
+    text-align: left;
+}
+
 h3 {
     font-size: 120%;
     margin-top: 48px;
@@ -238,3 +244,38 @@ ul.share-buttons .sr-only {
     width: 1px;
     overflow: hidden;
 }
+
+svg[data-tooltip] {
+    position: relative;
+  }
+  
+  svg[data-tooltip]::before,
+  svg[data-tooltip]::after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  svg[data-tooltip]::before {
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  svg[data-tooltip]::after {
+    content: attr(data-tooltip);
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  svg[data-tooltip]:hover::before,
+  svg[data-tooltip]:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
