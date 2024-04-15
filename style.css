@@ -14,7 +14,7 @@ h1 {
     color: #64C4DE;
     font-weight: 900;
     font-size: 400%;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 10px auto;
     line-height: 100%;
 }
 
@@ -46,6 +46,12 @@ a {
 #logo {
     width: 200px;
     height: auto;
+}
+
+#subtitle {
+    font-size: 200%;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .paras {
