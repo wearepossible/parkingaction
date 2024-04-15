@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: #64C4DE;
+    color: #32B08C;
     font-weight: 900;
     font-size: 400%;
     margin: 20px auto 10px auto;
@@ -33,7 +33,6 @@ a {
 }
 
 #background {
-    background-color: #F3FAFC;
     padding: 20px 0
 }
 
@@ -65,75 +64,37 @@ a {
     width: 90%;
     max-width: 850px;
     height: 600px;
-    margin: 10px auto 10px auto;
-    outline: 2px solid #64C4DE;
+    margin: 10px auto 40px auto;
 }
 
-.mapboxgl-popup {
-    transform: translateY(-10px);
-    font-family: 'Poppins', sans-serif;
-}
-
-.mapboxgl-popup-content {
-    text-align: center;
-    font-size: 105%;
-}
-
-.mapboxgl-popup-content h3 {
-    font-size: 135%;
-    margin-top: 10px;
-}
-
-.mapboxgl-popup-content p {
-    text-align: center;
-    margin: 8px;
-}
-
-.mapboxgl-popup #urlboxmap {
-    width: 70%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 80%;
-}
-
-.mapboxgl-popup span {
-    color: #BF0978;
+#map svg *:hover {
     cursor: pointer;
-    padding-left: 8px;
-    font-size: 80%;
+    stroke: white;
+    stroke-width: 5;
 }
 
-#tip {
-    width: 90%;
-    max-width: 850px;
-    margin: 0px auto 0px auto;
-    padding-bottom: 1px;
-}
-
-#tip p {
-    text-align: center;
-    font-size: 80%;
-    margin-bottom: 0;
-}
-
-#yesSSText {
-    font-size: 110%;
-    background-color: #64C4DE;
-    color: #fff;
-    padding: 8px;
-}
-
-#noSSText {
-    font-size: 110%;
-    background-color: #BF0978;
-    color: #fff;
-    padding: 8px;
-}
-
-#buttons * {
+#dropdown {
     margin: 5px auto;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    color: #321d49;
+}
+
+#goButton {
+    background-color: #32B08C;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#goButton:active {
+    background-color: white;
+    color: 32B08C;
 }
 
 #legend {
