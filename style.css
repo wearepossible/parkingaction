@@ -144,36 +144,6 @@ select {
     margin: 0 10px;
 }
 
-.fade-in-image {
-    animation: fadeIn 0.5s;
-    -webkit-animation: fadeIn 0.5s;
-    -moz-animation: fadeIn 0.5s;
-    -o-animation: fadeIn 0.5s;
-    -ms-animation: fadeIn 0.5s;
-}
-
-.btn {
-    color: #ffffff;
-    background: #BF0978;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    font-size: 100%;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-}
-
-#btn-public_greenspace {
-    color: #BF0978;
-    background: #ffffff;
-    text-decoration: none;
-    outline: 2px solid #BF0978;
-}
-
-#btn-submit {
-    margin-bottom: 0px;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -244,38 +214,3 @@ ul.share-buttons .sr-only {
     width: 1px;
     overflow: hidden;
 }
-
-svg[data-tooltip] {
-    position: relative;
-  }
-  
-  svg[data-tooltip]::before,
-  svg[data-tooltip]::after {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  svg[data-tooltip]::before {
-    content: '';
-    width: 100px;
-    height: 30px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-  }
-  
-  svg[data-tooltip]::after {
-    content: attr(data-tooltip);
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-  }
-  
-  svg[data-tooltip]:hover::before,
-  svg[data-tooltip]:hover::after {
-    visibility: visible;
-    opacity: 1;
-  }
